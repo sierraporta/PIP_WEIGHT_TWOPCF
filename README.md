@@ -11,4 +11,5 @@ Run `python joining_tiles.py` to read all available tiles for each catalog: "/gl
 
 We now need to run the DESI fiberassign code for each catalog. To do this, we will first generate a set of N(=128 in this case) mtl-files for each catalog that differ only in the "subpriority" column using a random uniform distribution. Run `python generate_multipass.py` to generate these files and a new folder "fiberassign_pip/" will be created.
 
+#### Third step
 
