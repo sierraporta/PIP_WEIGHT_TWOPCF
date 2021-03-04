@@ -32,11 +32,11 @@ Then to run the code with a parameter file, do `./TWOPCF param.txt`.
 
 In the makefile, you can turn on/off the PIP weights with the option D_USE_INV_WEIGHT. Also, the option D_N_MASK_INTS sets the number of columns of bitwise weights in the hdf5 files (so in this example, with 1 64-bit integer, it is set to 1, in this case it is set to 2 corresponding with 2 64-bit integer).
 
-To apply the PIP weights, you first need to calculate the angular pair counts for the parent sample. If you compile (with the D_USE_INV_WEIGHT option turned on), then run TWOPCF with param_parent.txt, it will create the files angDD.hdf5 and angDR.hdf5 with these angular pair counts. It will also output the monopole for the parent sample.
+To apply the PIP weights, you first need to calculate the angular pair counts for the parent sample. If you compile (with the D_USE_INV_WEIGHT option turned on), then run TWOPCF with param_parent.txt `./TWOPCF param_parent.txt`, it will create the files angDD.hdf5 and angDR.hdf5 with these angular pair counts. It will also output the monopole for the parent sample.
 
-Next, run TWOPCF with param_pip.txt. It will read in the angular pair counts, and also calculate the angular pair counts that use the PIP weights. It will then use these to output the monopole of the targeted sample with the PIP correction applied.
+Next, run TWOPCF with param_pip.txt `./TWOPCF param_pip.txt`. It will read in the angular pair counts, and also calculate the angular pair counts that use the PIP weights. It will then use these to output the monopole of the targeted sample with the PIP correction applied.
 
-To compare this to the monopole without the PIP correction, you can re-compile (without D_USE_INV_WEIGHT), then run TWOPCF using param_targeted.txt. The python script `plot_xi.ipynb` will make a plot to check that the PIP correction is working for each sample.
+To compare this to the monopole without the PIP correction, you can re-compile (without D_USE_INV_WEIGHT), then run TWOPCF using param_targeted.txt `./TWOPCF param_targeted.txt`. The python script `plot_xi.ipynb` will make a plot to check that the PIP correction is working for each sample.
 
 For this trhee samples (BGS, LRG and ELG) we obtain the folloging plots:
 
