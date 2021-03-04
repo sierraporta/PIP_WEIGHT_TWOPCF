@@ -13,4 +13,4 @@ We now need to run the DESI fiberassign code for each catalog. To do this, we wi
 
 #### Step 3
 
-Run `python run_pip_fba.py` to read all mtl-files for each catalog and run fiberassign code for each sample. A folder "fiberassign_pip/{cat}/fba-{time}-{cat}" will be created for each sample and then all the mtl-files will be deleted to free up disk space.
+Run `python run_pip_fba.py` to read all mtl-files for each catalog and run fiberassign code for each sample. A folder "fiberassign_pip/{cat}/fba-{time}-{cat}" (with time={'bright', 'dark' or 'gray'} and cat={'BGS', 'LRG' and 'ELG'}) will be created for each sample and then all the mtl-files will be deleted to free up disk space.
