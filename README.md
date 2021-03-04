@@ -19,7 +19,7 @@ Run `python run_pip_fba.py` to read all mtl-files for each catalog and run fiber
 
 Run `python generate_pipfiles.py` to generate the input files needed to calculate the two-point correlation function using the pip weight scheme. For each catalog the three files will be created in a new directory "clus_files_pip/parent_{cat}.hdf5", "clus_files_pip/randoms_{cat}.hdf5" and "clus_files_pip/targeted_{cat}.hdf5". These files contain RA, DEC, Z and a PIP weight vector (BITWEIGHT0 and BITWEIGHT1). The PIP weights are stored as a 64-bit signed integer (for 128=2^7 fibre assignment realizations). It's possible to have longer weight vectors by adding more datasets (BITWEIGHT2, BITWEIGHT3, etc). In the parent and random files, the PIP weights are all set to 1 (which corresponds to the integer -1), and the file of targeted objects contains the actual PIP weight vectors from fibre assignment.
 
-##### TWOPCF code
+#### Step 5: TWOPCF code
 
 There is a code that can calculate the correlation function with the PIP corrections on github here
 https://github.com/lstothert/two_pcf
