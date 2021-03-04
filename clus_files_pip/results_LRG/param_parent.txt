@@ -1,0 +1,74 @@
+#Correlation function paramter file. Comments start with #.
+
+data_filename = ../parent_lrg.hdf5
+data_file_type = hdf5      # ascii/hdf5
+random_filename = ../randoms_lrg.hdf5
+random_file_type = hdf5    # ascii/hdf5
+
+coord_system = equatorial            # equatorial/cartesian
+
+ra_x_dataset_name = RA        # hdf5 dataset names
+dec_y_dataset_name = DEC      # ra/dec/z for equatorial
+z_z_dataset_name = Z          # x/y/z for cartesian
+weight_dataset_name = empty    # Name for weight dataset if needed
+jk_dataset_name = empty
+
+use_weights = 0    # Boolean 0/1, assumes column 4 if reading ascii file
+n_threads = 64       # Set to zero for automatic thread detection
+
+n_jk_regions = 0
+
+omega_m = 0.31
+h = 0.676
+z_min = 0.0
+z_max = 1.0
+
+plot_monopole = 1     # Boolean 0/1
+monopole_filename = monopole_parent.hdf5
+monopole_output_type = hdf5
+monopole_log_base = 1.3 # Set to 1 for linear, any float above 1.1 valid
+monopole_min = 0.5
+monopole_max = 170.0
+monopole_n_bins = 30
+
+plot_sigma_pi = 0        # Boolean 0/1
+sigma_pi_filename = none
+sigma_pi_output_type = hdf5
+sigma_log_base = 1.0    # Set to 1 for linear, any float above 1.1 valid
+sigma_min = 0.0
+sigma_max = 50.0
+sigma_n_bins = 50
+pi_log_base = 1.0             # Set to 1 for linear, any float above 1.1 valid
+pi_min = 0.0
+pi_max = 50.0
+pi_n_bins = 50
+
+plot_s_mu = 0        # Boolean 0/1
+s_mu_filename = s_mu.hdf5
+s_mu_output_type = hdf5
+s_log_base = 1.3      # Set to 1 for linear, any float above 1.1 valid
+s_min = 0.0
+s_max = 100.0
+s_n_bins = 40
+mu_n_bins = 50
+
+
+# All below used in Bianchi Percival inv p weights scheme (Turn on in makefile)
+
+angular_dd_filename = angDD.hdf5
+calculate_angular_dd = 1
+angular_dd_invpweights_filename = angDDinvpweights.hdf5
+calculate_angular_dd_invpweights = 1
+angular_dr_filename = angDR.hdf5
+calculate_angular_dr = 1
+angular_dr_invpweights_filename = angDRinvpweights.hdf5
+calculate_angular_dr_invpweights = 1
+theta_max = 0.175     # Radians
+theta_n_bins = 50
+theta_log_base = 1.6
+healpix_order = 5
+n_bitwise_runs = 128
+bitwise_weight_dataset_name = BITWEIGHT
+
+# Below used if extra dither weights used (Turn on in makefile)
+#dither_weight_dataset_name = DITHERMASK
