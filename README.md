@@ -41,3 +41,4 @@ To compare this to the monopole without the PIP correction, you can re-compile (
 For this trhee samples (BGS, LRG and ELG) we obtain the folloging plots:
 
 ![alt text](correlfunctPIPBGS.png)
+![alt text](correlfunctPIPLRG.png)
