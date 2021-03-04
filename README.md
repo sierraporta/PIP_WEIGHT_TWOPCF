@@ -26,11 +26,9 @@ https://github.com/lstothert/two_pcf
 
 This code runs on NERSC. I have put a `makefile` file that has been modified so that the executable can be built in the NERSC system.
 
-It should be possible to get it to compile using
-make TWOPCF
+It should be possible to get it to compile using `make TWOPCF`.
 
-then to run the code with a parameter file, do
-./TWOPCF param.txt
+Then to run the code with a parameter file, do `./TWOPCF param.txt`.
 
 In the makefile, you can turn on/off the PIP weights with the option D_USE_INV_WEIGHT. Also, the option D_N_MASK_INTS sets the number of columns of bitwise weights in the hdf5 files (so in this example, with 1 64-bit integer, it is set to 1, in this case it is set to 2 corresponding with 2 64-bit integer).
 
