@@ -37,3 +37,6 @@ To apply the PIP weights, you first need to calculate the angular pair counts fo
 Next, run TWOPCF with param_pip.txt. It will read in the angular pair counts, and also calculate the angular pair counts that use the PIP weights. It will then use these to output the monopole of the targeted sample with the PIP correction applied.
 
 To compare this to the monopole without the PIP correction, you can re-compile (without D_USE_INV_WEIGHT), then run TWOPCF using param_targeted.txt. The python script `plot_xi.ipynb` will make a plot to check that the PIP correction is working for each sample.
+
+For this trge samples (BGS, LRG and ELG) we obtain the folloging plots:
+![Texto alternativo](correlfunctPIPBGS.pdf)
