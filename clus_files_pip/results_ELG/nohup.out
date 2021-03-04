@@ -1,0 +1,387 @@
+--TWOPCF correlation function calculator--
+
+Correct number of arguments passed
+Reading parameter file: param_parent.txt
+Key: data_filename,	 Value: ../parent_elg.hdf5,	 Result: KEY FOUND
+Key: data_file_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: random_filename,	 Value: ../randoms_elg.hdf5,	 Result: KEY FOUND
+Key: random_file_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: coord_system,	 Value: equatorial,	 Result: KEY FOUND
+Key: ra_x_dataset_name,	 Value: RA,	 Result: KEY FOUND
+Key: dec_y_dataset_name,	 Value: DEC,	 Result: KEY FOUND
+Key: z_z_dataset_name,	 Value: Z,	 Result: KEY FOUND
+Key: weight_dataset_name,	 Value: empty,	 Result: KEY FOUND
+Key: jk_dataset_name,	 Value: empty,	 Result: KEY FOUND
+Key: use_weights,	 Value: 0,	 Result: KEY FOUND
+Key: n_threads,	 Value: 64,	 Result: KEY FOUND
+Key: n_jk_regions,	 Value: 0,	 Result: KEY FOUND
+Key: omega_m,	 Value: 0.31,	 Result: KEY FOUND
+Key: h,	 Value: 0.676,	 Result: KEY FOUND
+Key: z_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: z_max,	 Value: 1.0,	 Result: KEY FOUND
+Key: plot_monopole,	 Value: 1,	 Result: KEY FOUND
+Key: monopole_filename,	 Value: monopole_parent.hdf5,	 Result: KEY FOUND
+Key: monopole_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: monopole_log_base,	 Value: 1.3,	 Result: KEY FOUND
+Key: monopole_min,	 Value: 0.5,	 Result: KEY FOUND
+Key: monopole_max,	 Value: 170.0,	 Result: KEY FOUND
+Key: monopole_n_bins,	 Value: 30,	 Result: KEY FOUND
+Key: plot_sigma_pi,	 Value: 0,	 Result: KEY FOUND
+Key: sigma_pi_filename,	 Value: none,	 Result: KEY FOUND
+Key: sigma_pi_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: sigma_log_base,	 Value: 1.0,	 Result: KEY FOUND
+Key: sigma_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: sigma_max,	 Value: 50.0,	 Result: KEY FOUND
+Key: sigma_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: pi_log_base,	 Value: 1.0,	 Result: KEY FOUND
+Key: pi_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: pi_max,	 Value: 50.0,	 Result: KEY FOUND
+Key: pi_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: plot_s_mu,	 Value: 0,	 Result: KEY FOUND
+Key: s_mu_filename,	 Value: s_mu.hdf5,	 Result: KEY FOUND
+Key: s_mu_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: s_log_base,	 Value: 1.3,	 Result: KEY FOUND
+Key: s_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: s_max,	 Value: 100.0,	 Result: KEY FOUND
+Key: s_n_bins,	 Value: 40,	 Result: KEY FOUND
+Key: mu_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: angular_dd_filename,	 Value: angDD.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dd,	 Value: 1,	 Result: KEY FOUND
+Key: angular_dd_invpweights_filename,	 Value: angDDinvpweights.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dd_invpweights,	 Value: 1,	 Result: KEY FOUND
+Key: angular_dr_filename,	 Value: angDR.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dr,	 Value: 1,	 Result: KEY FOUND
+Key: angular_dr_invpweights_filename,	 Value: angDRinvpweights.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dr_invpweights,	 Value: 1,	 Result: KEY FOUND
+Key: theta_max,	 Value: 0.175,	 Result: KEY FOUND
+Key: theta_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: theta_log_base,	 Value: 1.6,	 Result: KEY FOUND
+Key: healpix_order,	 Value: 5,	 Result: KEY FOUND
+Key: n_bitwise_runs,	 Value: 128,	 Result: KEY FOUND
+Key: bitwise_weight_dataset_name,	 Value: BITWEIGHT,	 Result: KEY FOUND
+
+
+Using 64 threads.
+
+--Initialising Cosmology--
+Omega m: 0.31
+Omega l: 0.69
+h: 0.676
+
+
+Reading file: ../parent_elg.hdf5
+File type hdf5
+File successfully opened
+N points in file: 452959
+Reading equatorial data
+Reading bitwise weights
+
+
+Reading file: ../randoms_elg.hdf5
+File type hdf5
+File successfully opened
+N points in file: 2966046
+Reading equatorial data
+Reading bitwise weights
+
+Calculating angular DDs
+Placing galaxies in pixels
+N gals used: 452959
+Total pixels on the sky: 12288
+Number of pixels used: 97
+Calculating angular DDs with inverse p-weights
+Placing galaxies in pixels
+N gals used: 452959
+Total pixels on the sky: 12288
+Number of pixels used: 97
+Calculating angular DRs
+Placing galaxies in pixels
+N gals used: 452959
+Total pixels on the sky: 12288
+Number of pixels used: 97
+Placing galaxies in pixels
+N gals used: 2966046
+Total pixels on the sky: 12288
+Number of pixels used: 124
+Calculating angular DRs with inverse weights
+Placing galaxies in pixels
+N gals used: 452959
+Total pixels on the sky: 12288
+Number of pixels used: 97
+Placing galaxies in pixels
+N gals used: 2966046
+Total pixels on the sky: 12288
+Number of pixels used: 124
+Calculating autocorrelation monopole with inverse p weights
+Placing galaxies in 3d boxes
+Min    Max
+-1606.98 3400.75
+-148.009 2896.8
+3.997e-07 2092.88
+Num Boxes: 
+30 18 13
+Total:7020
+Num boxes used: 300
+
+Placing galaxies in 3d boxes
+Min    Max
+-1606.98 3400.75
+-148.009 2896.8
+3.997e-07 2092.88
+Num Boxes: 
+30 18 13
+Total:7020
+Num boxes used: 377
+
+Calculating Monopole DDs
+
+Reading file: angDD.hdf5
+
+Reading file: angDDinvpweights.hdf5
+Calculating Monopole DRs
+
+Reading file: angDR.hdf5
+
+Reading file: angDRinvpweights.hdf5
+Calculating Monopole RRs
+--TWOPCF correlation function calculator--
+
+Correct number of arguments passed
+Reading parameter file: param_pip.txt
+Key: data_filename,	 Value: ../targeted_elg.hdf5,	 Result: KEY FOUND
+Key: data_file_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: random_filename,	 Value: ../randoms_elg.hdf5,	 Result: KEY FOUND
+Key: random_file_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: coord_system,	 Value: equatorial,	 Result: KEY FOUND
+Key: ra_x_dataset_name,	 Value: RA,	 Result: KEY FOUND
+Key: dec_y_dataset_name,	 Value: DEC,	 Result: KEY FOUND
+Key: z_z_dataset_name,	 Value: Z,	 Result: KEY FOUND
+Key: weight_dataset_name,	 Value: empty,	 Result: KEY FOUND
+Key: jk_dataset_name,	 Value: empty,	 Result: KEY FOUND
+Key: use_weights,	 Value: 0,	 Result: KEY FOUND
+Key: n_threads,	 Value: 64,	 Result: KEY FOUND
+Key: n_jk_regions,	 Value: 0,	 Result: KEY FOUND
+Key: omega_m,	 Value: 0.31,	 Result: KEY FOUND
+Key: h,	 Value: 0.676,	 Result: KEY FOUND
+Key: z_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: z_max,	 Value: 1.0,	 Result: KEY FOUND
+Key: plot_monopole,	 Value: 1,	 Result: KEY FOUND
+Key: monopole_filename,	 Value: monopole_pip.hdf5,	 Result: KEY FOUND
+Key: monopole_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: monopole_log_base,	 Value: 1.3,	 Result: KEY FOUND
+Key: monopole_min,	 Value: 0.5,	 Result: KEY FOUND
+Key: monopole_max,	 Value: 170.0,	 Result: KEY FOUND
+Key: monopole_n_bins,	 Value: 30,	 Result: KEY FOUND
+Key: plot_sigma_pi,	 Value: 0,	 Result: KEY FOUND
+Key: sigma_pi_filename,	 Value: none,	 Result: KEY FOUND
+Key: sigma_pi_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: sigma_log_base,	 Value: 1.0,	 Result: KEY FOUND
+Key: sigma_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: sigma_max,	 Value: 50.0,	 Result: KEY FOUND
+Key: sigma_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: pi_log_base,	 Value: 1.0,	 Result: KEY FOUND
+Key: pi_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: pi_max,	 Value: 50.0,	 Result: KEY FOUND
+Key: pi_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: plot_s_mu,	 Value: 0,	 Result: KEY FOUND
+Key: s_mu_filename,	 Value: s_mu.hdf5,	 Result: KEY FOUND
+Key: s_mu_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: s_log_base,	 Value: 1.3,	 Result: KEY FOUND
+Key: s_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: s_max,	 Value: 100.0,	 Result: KEY FOUND
+Key: s_n_bins,	 Value: 40,	 Result: KEY FOUND
+Key: mu_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: angular_dd_filename,	 Value: angDD.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dd,	 Value: 0,	 Result: KEY FOUND
+Key: angular_dd_invpweights_filename,	 Value: angDDinvpweights.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dd_invpweights,	 Value: 1,	 Result: KEY FOUND
+Key: angular_dr_filename,	 Value: angDR.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dr,	 Value: 0,	 Result: KEY FOUND
+Key: angular_dr_invpweights_filename,	 Value: angDRinvpweights.hdf5,	 Result: KEY FOUND
+Key: calculate_angular_dr_invpweights,	 Value: 1,	 Result: KEY FOUND
+Key: theta_max,	 Value: 0.175,	 Result: KEY FOUND
+Key: theta_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: theta_log_base,	 Value: 1.6,	 Result: KEY FOUND
+Key: healpix_order,	 Value: 5,	 Result: KEY FOUND
+Key: n_bitwise_runs,	 Value: 128,	 Result: KEY FOUND
+Key: bitwise_weight_dataset_name,	 Value: BITWEIGHT,	 Result: KEY FOUND
+
+
+Using 64 threads.
+
+--Initialising Cosmology--
+Omega m: 0.31
+Omega l: 0.69
+h: 0.676
+
+
+Reading file: ../targeted_elg.hdf5
+File type hdf5
+File successfully opened
+N points in file: 368763
+Reading equatorial data
+Reading bitwise weights
+
+
+Reading file: ../randoms_elg.hdf5
+File type hdf5
+File successfully opened
+N points in file: 2966046
+Reading equatorial data
+Reading bitwise weights
+
+Calculating angular DDs with inverse p-weights
+Placing galaxies in pixels
+N gals used: 368763
+Total pixels on the sky: 12288
+Number of pixels used: 97
+Calculating angular DRs with inverse weights
+Placing galaxies in pixels
+N gals used: 368763
+Total pixels on the sky: 12288
+Number of pixels used: 97
+Placing galaxies in pixels
+N gals used: 2966046
+Total pixels on the sky: 12288
+Number of pixels used: 124
+Calculating autocorrelation monopole with inverse p weights
+Placing galaxies in 3d boxes
+Min    Max
+-1606.98 3400.75
+-148.009 2896.8
+3.997e-07 2092.88
+Num Boxes: 
+30 18 13
+Total:7020
+Num boxes used: 297
+
+Placing galaxies in 3d boxes
+Min    Max
+-1606.98 3400.75
+-148.009 2896.8
+3.997e-07 2092.88
+Num Boxes: 
+30 18 13
+Total:7020
+Num boxes used: 377
+
+Calculating Monopole DDs
+
+Reading file: angDD.hdf5
+
+Reading file: angDDinvpweights.hdf5
+Calculating Monopole DRs
+
+Reading file: angDR.hdf5
+
+Reading file: angDRinvpweights.hdf5
+Calculating Monopole RRs
+--TWOPCF correlation function calculator--
+
+Correct number of arguments passed
+Reading parameter file: param_targeted.txt
+Key: data_filename,	 Value: ../targeted_elg.hdf5,	 Result: KEY FOUND
+Key: data_file_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: random_filename,	 Value: ../randoms_elg.hdf5,	 Result: KEY FOUND
+Key: random_file_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: coord_system,	 Value: equatorial,	 Result: KEY FOUND
+Key: ra_x_dataset_name,	 Value: RA,	 Result: KEY FOUND
+Key: dec_y_dataset_name,	 Value: DEC,	 Result: KEY FOUND
+Key: z_z_dataset_name,	 Value: Z,	 Result: KEY FOUND
+Key: weight_dataset_name,	 Value: empty,	 Result: KEY FOUND
+Key: jk_dataset_name,	 Value: empty,	 Result: KEY FOUND
+Key: use_weights,	 Value: 0,	 Result: KEY FOUND
+Key: n_threads,	 Value: 64,	 Result: KEY FOUND
+Key: n_jk_regions,	 Value: 0,	 Result: KEY FOUND
+Key: omega_m,	 Value: 0.31,	 Result: KEY FOUND
+Key: h,	 Value: 0.676,	 Result: KEY FOUND
+Key: z_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: z_max,	 Value: 1.0,	 Result: KEY FOUND
+Key: plot_monopole,	 Value: 1,	 Result: KEY FOUND
+Key: monopole_filename,	 Value: monopole_targeted.hdf5,	 Result: KEY FOUND
+Key: monopole_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: monopole_log_base,	 Value: 1.3,	 Result: KEY FOUND
+Key: monopole_min,	 Value: 0.5,	 Result: KEY FOUND
+Key: monopole_max,	 Value: 170.0,	 Result: KEY FOUND
+Key: monopole_n_bins,	 Value: 30,	 Result: KEY FOUND
+Key: plot_sigma_pi,	 Value: 0,	 Result: KEY FOUND
+Key: sigma_pi_filename,	 Value: none,	 Result: KEY FOUND
+Key: sigma_pi_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: sigma_log_base,	 Value: 1.0,	 Result: KEY FOUND
+Key: sigma_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: sigma_max,	 Value: 50.0,	 Result: KEY FOUND
+Key: sigma_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: pi_log_base,	 Value: 1.0,	 Result: KEY FOUND
+Key: pi_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: pi_max,	 Value: 50.0,	 Result: KEY FOUND
+Key: pi_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: plot_s_mu,	 Value: 0,	 Result: KEY FOUND
+Key: s_mu_filename,	 Value: s_mu.hdf5,	 Result: KEY FOUND
+Key: s_mu_output_type,	 Value: hdf5,	 Result: KEY FOUND
+Key: s_log_base,	 Value: 1.3,	 Result: KEY FOUND
+Key: s_min,	 Value: 0.0,	 Result: KEY FOUND
+Key: s_max,	 Value: 100.0,	 Result: KEY FOUND
+Key: s_n_bins,	 Value: 40,	 Result: KEY FOUND
+Key: mu_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: angular_dd_filename,	 Value: none,	 Result: KEY FOUND
+Key: calculate_angular_dd,	 Value: 0,	 Result: KEY FOUND
+Key: angular_dd_invpweights_filename,	 Value: none,	 Result: KEY FOUND
+Key: calculate_angular_dd_invpweights,	 Value: 0,	 Result: KEY FOUND
+Key: angular_dr_filename,	 Value: none,	 Result: KEY FOUND
+Key: calculate_angular_dr,	 Value: 0,	 Result: KEY FOUND
+Key: angular_dr_invpweights_filename,	 Value: none,	 Result: KEY FOUND
+Key: calculate_angular_dr_invpweights,	 Value: 0,	 Result: KEY FOUND
+Key: theta_max,	 Value: 0.175,	 Result: KEY FOUND
+Key: theta_n_bins,	 Value: 50,	 Result: KEY FOUND
+Key: theta_log_base,	 Value: 1.6,	 Result: KEY FOUND
+Key: healpix_order,	 Value: 5,	 Result: KEY FOUND
+Key: n_bitwise_runs,	 Value: 128,	 Result: KEY FOUND
+Key: bitwise_weight_dataset_name,	 Value: BITWEIGHT,	 Result: KEY FOUND
+
+
+Using 64 threads.
+
+--Initialising Cosmology--
+Omega m: 0.31
+Omega l: 0.69
+h: 0.676
+
+
+Reading file: ../targeted_elg.hdf5
+File type hdf5
+File successfully opened
+N points in file: 368763
+Reading equatorial data
+
+
+Reading file: ../randoms_elg.hdf5
+File type hdf5
+File successfully opened
+N points in file: 2966046
+Reading equatorial data
+
+Calculating autocorrelation monopole
+Placing galaxies in 3d boxes
+Min    Max
+-1606.98 3400.75
+-148.009 2896.8
+3.997e-07 2092.88
+Num Boxes: 
+30 18 13
+Total:7020
+Num boxes used: 297
+
+Placing galaxies in 3d boxes
+Min    Max
+-1606.98 3400.75
+-148.009 2896.8
+3.997e-07 2092.88
+Num Boxes: 
+30 18 13
+Total:7020
+Num boxes used: 377
+
+
+Calculating Monopole DDs
+Calculating Monopole DRs
+Calculating Monopole RRs
