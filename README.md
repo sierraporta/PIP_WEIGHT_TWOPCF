@@ -38,5 +38,6 @@ Next, run TWOPCF with param_pip.txt. It will read in the angular pair counts, an
 
 To compare this to the monopole without the PIP correction, you can re-compile (without D_USE_INV_WEIGHT), then run TWOPCF using param_targeted.txt. The python script `plot_xi.ipynb` will make a plot to check that the PIP correction is working for each sample.
 
-For this trge samples (BGS, LRG and ELG) we obtain the folloging plots:
-![Texto alternativo](correlfunctPIPBGS.pdf)
+For this trhee samples (BGS, LRG and ELG) we obtain the folloging plots:
+
+![alt text](correlfunctPIPBGS.pdf)
